@@ -1,0 +1,194 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3ofxsumifv6"]
+
+[ext_resource type="Script" path="res://addons/transform_variance/settings.gd" id="1_7386d"]
+
+[node name="TransformVarianceSettings" type="VBoxContainer"]
+offset_right = 392.0
+offset_bottom = 291.0
+theme_override_constants/separation = 10
+script = ExtResource("1_7386d")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Transform Variance Settings"
+horizontal_alignment = 1
+
+[node name="Labels" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Labels"]
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="X" type="Label" parent="Labels"]
+custom_minimum_size = Vector2(78, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "X"
+
+[node name="Y" type="Label" parent="Labels"]
+custom_minimum_size = Vector2(78, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Y"
+
+[node name="Z" type="Label" parent="Labels"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Z"
+
+[node name="Linked" type="Label" parent="Labels"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Link?"
+
+[node name="Pos" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Pos"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Active" type="CheckBox" parent="Pos"]
+layout_mode = 2
+button_pressed = true
+
+[node name="Property" type="Label" parent="Pos"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Position:"
+
+[node name="X" type="SpinBox" parent="Pos"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+value = 0.5
+alignment = 1
+
+[node name="Y" type="SpinBox" parent="Pos"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+alignment = 1
+
+[node name="Z" type="SpinBox" parent="Pos"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+value = 0.5
+alignment = 1
+
+[node name="Linked" type="CheckBox" parent="Pos"]
+layout_mode = 2
+
+[node name="Rot" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Rot"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Active" type="CheckBox" parent="Rot"]
+layout_mode = 2
+button_pressed = true
+
+[node name="Property" type="Label" parent="Rot"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Rotation:"
+
+[node name="X" type="SpinBox" parent="Rot"]
+layout_mode = 2
+max_value = 180.0
+step = 0.1
+value = 15.0
+alignment = 1
+
+[node name="Y" type="SpinBox" parent="Rot"]
+layout_mode = 2
+max_value = 360.0
+step = 0.1
+value = 180.0
+alignment = 1
+
+[node name="Z" type="SpinBox" parent="Rot"]
+layout_mode = 2
+max_value = 180.0
+step = 0.1
+value = 15.0
+alignment = 1
+
+[node name="Linked" type="CheckBox" parent="Rot"]
+layout_mode = 2
+
+[node name="Scale" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Scale"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Active" type="CheckBox" parent="Scale"]
+layout_mode = 2
+button_pressed = true
+
+[node name="Property" type="Label" parent="Scale"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Scale:"
+
+[node name="X" type="SpinBox" parent="Scale"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+value = 0.25
+alignment = 1
+
+[node name="Y" type="SpinBox" parent="Scale"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+value = 0.25
+alignment = 1
+
+[node name="Z" type="SpinBox" parent="Scale"]
+layout_mode = 2
+max_value = 5.0
+step = 0.01
+value = 0.25
+alignment = 1
+
+[node name="Linked" type="CheckBox" parent="Scale"]
+layout_mode = 2
+button_pressed = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="Description" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Description"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Description"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Above are the maximum  thresholds for random variance on each property.
+
+If linked, the X, Y, and Z axes will share the same thresholds.
+
+For optimal results when scaling environment features such as trees or rocks, ensure that the object's origin point is positioned at or near its base."
+autowrap_mode = 3

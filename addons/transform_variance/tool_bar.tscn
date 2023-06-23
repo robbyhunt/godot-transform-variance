@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bgw1qq5wphin4"]
+
+[node name="TransformVariance" type="HBoxContainer"]
+offset_right = 1345.0
+offset_bottom = 31.0
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="ApplyButton" type="Button" parent="."]
+layout_mode = 2
+text = "Apply Transform Variance"
+flat = true
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 2
+text = "     "
+flat = true
+icon_alignment = 1
+expand_icon = true

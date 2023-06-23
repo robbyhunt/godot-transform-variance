@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=3 uid="uid://bao7u0orwsp0f"]
+
+[ext_resource type="PackedScene" uid="uid://b8m4tgoh1q864" path="res://addons/transform_variance/example/example_object.tscn" id="1_p70i6"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t11vi"]
+size = Vector2(10, 10)
+
+[node name="ExampleScene" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_t11vi")
+
+[node name="SelectMeAndApplyVariance" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="SelectMeAndApplyVariance2" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+
+[node name="SelectMeAndApplyVariance3" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="SelectMeAndApplyVariance4" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
+
+[node name="SelectMeAndApplyVariance5" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="SelectMeAndApplyVariance6" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="SelectMeAndApplyVariance7" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="SelectMeAndApplyVariance8" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="SelectMeAndApplyVariance9" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="SelectMeAndApplyVariance10" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
+
+[node name="SelectMeAndApplyVariance11" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="SelectMeAndApplyVariance12" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="SelectMeAndApplyVariance13" parent="." instance=ExtResource("1_p70i6")]
+
+[node name="SelectMeAndApplyVariance14" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="SelectMeAndApplyVariance15" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="SelectMeAndApplyVariance16" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="SelectMeAndApplyVariance17" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="SelectMeAndApplyVariance18" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="SelectMeAndApplyVariance19" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="SelectMeAndApplyVariance20" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="SelectMeAndApplyVariance21" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="SelectMeAndApplyVariance22" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="SelectMeAndApplyVariance23" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="SelectMeAndApplyVariance24" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="SelectMeAndApplyVariance25" parent="." instance=ExtResource("1_p70i6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
